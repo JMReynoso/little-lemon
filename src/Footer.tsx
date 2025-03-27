@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import restaurantFood from "./images/restauranfood.jpg";
 
 function Footer() {
@@ -7,43 +8,43 @@ function Footer() {
       <ul>
         <li>Doormat Nav</li>
         <li>
-          <a href="#">Home</a>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <a href="#">About</a>
+          <Link to="/about">About</Link>
         </li>
         <li>
-          <a href="#">Reservations</a>
+          <Link to="/reservations">Reservations</Link>
         </li>
         <li>
-          <a href="#">Order Online</a>
+          <Link to="/orderOnline">Order Online</Link>
         </li>
         <li>
-          <a href="#">Login</a>
+          <Link to="/login">Login</Link>
         </li>
       </ul>
       <ul>
         <li>Contact</li>
         <li>
-          <a href="#">Address</a>
+          <Link to="/address">Address</Link>
         </li>
         <li>
-          <a href="#">Phone Number</a>
+          <Link to="/phoneNumber">Phone Number</Link>
         </li>
         <li>
-          <a href="#">Email</a>
+          <Link to="/email">Email</Link>
         </li>
       </ul>
       <ul>
         <li>Social Media</li>
         <li>
-          <a href="#">Address</a>
+          <a href="#">Facebook</a>
         </li>
         <li>
-          <a href="#">Phone Number</a>
+          <a href="#">Instagram</a>
         </li>
         <li>
-          <a href="#">Email</a>
+          <a href="#">Twitter</a>
         </li>
       </ul>
     </footer>
