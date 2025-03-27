@@ -3,6 +3,8 @@ body {
   font-family: 'Karla';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display:grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 code {
@@ -49,6 +51,8 @@ a {
   background-color: #FBDABB;
   padding-left: 10em;
   padding-right: 10em;
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
 }
 
 .nav-footer > img {

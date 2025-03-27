@@ -11,9 +11,11 @@ function App() {
   return (
     <>
       <Header/>
+      <body>      
       <Nav/>
       <Main/>
       <Footer/>
+      </body>
     </>
   );
 }
