@@ -1,7 +1,9 @@
+import restaurantFood from "./images/restauranfood.jpg";
+
 function Footer() {
   return (
-    <footer>
-      <img src={require('./images/restauranfood.jpg')} alt="pic"></img>
+    <footer className="nav-footer">
+      <img src={restaurantFood} alt="pic"></img>
       <ul>
         <li>Doormat Nav</li>
         <li>
