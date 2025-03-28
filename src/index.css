@@ -19,7 +19,7 @@ keeping sizing of items that are bigger/smaller than neighbor*/
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 3em;
+  gap: 6em;
   font-size: 20px;
   font-weight: 800;
 }
@@ -129,7 +129,6 @@ a {
 p {
   font-family: 'Karla';
   font-size: 16px;
-  line-height: 1.5px;
 }
 
 /* for price */
@@ -137,4 +136,124 @@ p {
   font-family: 'Karla';
   font-size: 16px;
   font-weight: 700;
+}
+
+button {
+  background-color: #F4CE14;
+  color: #333333;
+  border-radius: 16px;
+  padding: 1em;
+  font-size: 18px;
+  border: none;
+}
+
+button:active {
+  background-color: #D9D9D9;
+}
+
+.hero-section > img {
+  display: flex;
+  width: 60%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: -30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+  padding-left: 10em;
+  padding-right: 10em;
+  padding-top: 2.5em;
+  padding-bottom: -2.5em;
+  background-color: #495E57;
+  color: white;
+}
+
+.hero-section > div > h1{
+  margin-bottom: 0%;
+}
+.hero-section > div > h2{
+  margin-top: 0%;
+}
+.hero-section > div > button{
+  margin-top: 20%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+  font-size: 18px;
+}
+
+.highlight {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 7%;
+  margin-bottom: 0%;
+}
+
+.highlight > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10em;
+}
+.highlight > div:first-child > button {
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.card {
+  display: flex;
+  width: 350px;
+  height: 500px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: #D9D9D9;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.card > img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  margin-top: -10%;
+}
+
+.card > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+  gap: 5em;
+  padding-top: 0%;
+  padding-bottom: 0%;
+}
+
+.card > button {
+  margin: auto;
+  margin-bottom: 10%;
+}
+
+.card > p {
+  margin-top: 0%;
+  margin-left: 2em;
+  margin-bottom: 2em;
 }
