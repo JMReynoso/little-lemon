@@ -37,8 +37,10 @@ a {
   display : flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 1em;
+  gap: 6em;
   justify-content: center;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 /* grid is good for large scale webpages, card displays, structured layout */
@@ -49,8 +51,8 @@ a {
   grid-template-columns: repeat(4, 1fr);
   gap: 1em;
   background-color: #FBDABB;
-  padding-left: 10em;
-  padding-right: 10em;
+  padding-left: 10%;
+  padding-right: 10%;
   padding-top: 2.5em;
   padding-bottom: 2.5em;
 }
@@ -157,7 +159,7 @@ button:active {
   height: auto;
   object-fit: cover;
   border-radius: 16px;
-  margin-bottom: -30%;
+  margin-bottom: -25%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -166,8 +168,8 @@ button:active {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1em;
-  padding-left: 10em;
-  padding-right: 10em;
+  padding-left: 10%;
+  padding-right: 10%;
   padding-top: 2.5em;
   padding-bottom: -2.5em;
   background-color: #495E57;
@@ -194,7 +196,7 @@ button:active {
   flex-direction: column;
   margin-left: 10%;
   margin-right: 10%;
-  margin-top: 7%;
+  margin-top: 15%;
   margin-bottom: 0%;
 }
 
