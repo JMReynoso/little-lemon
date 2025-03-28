@@ -102,12 +102,14 @@ a {
   font-family: 'Markazi Text';
   font-size: 64px;
   font-weight: 500;
+  margin-bottom: 0%;
 }
 
 .sub-title {
   font-family: 'Markazi Text';
   font-size: 40px;
   font-weight: 400;
+  margin-top: 0%;
 }
 
 .leading-text {
@@ -176,12 +178,6 @@ button:active {
   color: white;
 }
 
-.hero-section > div > h1{
-  margin-bottom: 0%;
-}
-.hero-section > div > h2{
-  margin-top: 0%;
-}
 .hero-section > div > button{
   margin-top: 20%;
   display: flex;
@@ -308,4 +304,26 @@ button:active {
   gap: 2em;
   margin-left: auto;
   margin-right: auto;
+}
+
+.about-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2em;
+
+  margin: 10%;
+}
+
+.about-section > div > img {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  border-radius: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-section > div > img:nth-child(2) {
+  margin-top: -20%;
+  margin-left: -5%;
 }
