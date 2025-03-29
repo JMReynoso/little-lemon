@@ -1,4 +1,4 @@
-import { BrowserRouter } from "react-router-dom";
+import AllRoutes from "./AllRoutes";
 import "./App.css";
 import Main from "./Main";
 
@@ -8,9 +8,8 @@ import Main from "./Main";
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <Main />
-      </BrowserRouter>
+      <Main />
+      <AllRoutes />
     </>
   );
 }
