@@ -1,4 +1,3 @@
-import AllRoutes from "./AllRoutes";
 import "./App.css";
 import Main from "./Main";
 
@@ -9,7 +8,6 @@ function App() {
   return (
     <>
       <Main />
-      <AllRoutes />
     </>
   );
 }
