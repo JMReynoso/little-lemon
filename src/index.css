@@ -147,7 +147,7 @@ p {
   font-weight: 700;
 }
 
-button {
+button, input[type="submit"] {
   background-color: #F4CE14;
   color: #333333;
   border-radius: 16px;
@@ -156,11 +156,11 @@ button {
   border: none;
 }
 
-button:active {
+button:active, input[type="submit"]:active {
   background-color: #ebebeb;
 }
 
-button:hover {
+button:hover, input[type="submit"]:hover {
   background-color: #FBDABB;
 }
 
@@ -342,4 +342,10 @@ button:hover {
 .about-section > div > img:nth-child(2) {
   margin-top: -20%;
   margin-left: 25%;
+}
+
+.booking-form > div{
+  display: "flex";
+  flex-direction: "row";
+  gap: 6em;
 }
