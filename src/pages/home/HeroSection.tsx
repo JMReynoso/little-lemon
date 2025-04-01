@@ -1,5 +1,5 @@
 import { redirect } from "react-router";
-import restaurantFood from "./images/restauranfood.jpg";
+import restaurantFood from "../../images/restauranfood.jpg";
 
 function HeroSection() {
   return (

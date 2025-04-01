@@ -1,7 +1,7 @@
 import Card from "./Card";
-import greekSalad from "./images/greek salad.jpg";
-import bruchetta from "./images/bruchetta.svg";
-import lemonDessert from "./images/lemon dessert.jpg";
+import greekSalad from "../../images/greek salad.jpg";
+import bruchetta from "../../images/bruchetta.svg";
+import lemonDessert from "../../images/lemon dessert.jpg";
 
 function HighlightSection() {
   return (
