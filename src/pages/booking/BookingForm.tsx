@@ -4,36 +4,49 @@ interface BookingFormProps {
   onSubmit: (formData: BookingFormData) => void;
   dispatch: (day: string) => void;
   times: string[];
+  setIsSuccessful: (isSuccessful: boolean) => void;
 }
 
 interface BookingFormData {
-  name: string;
-  email: string;
   date: string;
   occasion: string;
   guests: number;
 }
 
-function BookingForm({ times, dispatch, onSubmit }: BookingFormProps) {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
+function BookingForm({
+  times,
+  dispatch,
+  onSubmit,
+  setIsSuccessful,
+}: BookingFormProps) {
   const [date, setDate] = useState("");
   const [occasion, setOccasion] = useState("");
   const [guests, setGuests] = useState(1);
 
-  const formData = { name, email, date, times, occasion, guests };
+  const formData = { date, times, occasion, guests };
+
+  const validateForm = () => {
+    if (!date) {
+      alert("Date is required.");
+      return false;
+    }
+    if (!occasion) {
+      alert("Occasion is required.");
+      return false;
+    }
+    if (guests < 1 || guests > 10) {
+      alert("Guests must be between 1 and 10.");
+      return false;
+    }
+    setIsSuccessful(true);
+    return true;
+  };
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
   ) => {
     const { name, value } = e.target;
     switch (name) {
-      case "name":
-        setName(value);
-        break;
-      case "email":
-        setEmail(value);
-        break;
       case "date":
         setDate(value);
         const day: string = new Date(value).getDay().toString(); //0-6 where 0 is Sunday and 6 is Saturday
@@ -52,6 +65,7 @@ function BookingForm({ times, dispatch, onSubmit }: BookingFormProps) {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    validateForm();
     onSubmit(formData);
   };
 
@@ -110,9 +124,10 @@ function BookingForm({ times, dispatch, onSubmit }: BookingFormProps) {
         <select
           id="occasion"
           name="occasion"
-          value={formData.occasion || ""}
+          value={formData.occasion}
           onChange={handleChange}
         >
+          <option value="">Select an occasion</option>
           <option value="Birthday">Birthday</option>
           <option value="Anniversary">Anniversary</option>
         </select>

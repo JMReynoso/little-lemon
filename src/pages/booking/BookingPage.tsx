@@ -1,4 +1,6 @@
+import { useState } from "react";
 import BookingForm from "./BookingForm";
+import BookingSuccessPage from "./BookingSuccessPage";
 
 interface BookingPageProps {
   times: string[];
@@ -6,13 +8,20 @@ interface BookingPageProps {
 }
 
 function BookingPage({ times, dispatch }: BookingPageProps) {
+  const [isSuccessful, setIsSuccessful] = useState(false);
+
   return (
     <div style={{ backgroundColor: "#495E57" }}>
-      <BookingForm
-        times={times}
-        dispatch={dispatch}
-        onSubmit={(formData) => console.log(formData)}
-      />
+      {!isSuccessful ? (
+        <BookingForm
+          times={times}
+          dispatch={dispatch}
+          onSubmit={(formData) => console.log(formData)}
+          setIsSuccessful={setIsSuccessful}
+        />
+      ) : (
+        <BookingSuccessPage />
+      )}
     </div>
   );
 }
