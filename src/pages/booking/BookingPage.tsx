@@ -1,4 +1,4 @@
-import BookingForm from "../BookingForm";
+import BookingForm from "./BookingForm";
 
 function BookingPage() {
   return (
