@@ -1,7 +1,8 @@
-import { redirect } from "react-router";
+import { useNavigate } from "react-router";
 import restaurantFood from "../../images/restauranfood.jpg";
 
 function HeroSection() {
+  const navigate = useNavigate();
   return (
     <section className="hero-section">
       <div>
@@ -13,7 +14,7 @@ function HeroSection() {
         </p>
         <button
           onClick={() => {
-            redirect("/reservations");
+            navigate("/reservations");
           }}
         >
           Reserve a Table
