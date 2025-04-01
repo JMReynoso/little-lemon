@@ -1,11 +1,12 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import logo from "../images/Logo.svg";
 import "./css/Nav.css";
 
 function Nav() {
+  const navigation = useNavigate();
   return (
     <nav className="nav">
-      <img src={logo} alt="Logo" />
+      <img src={logo} alt="Logo" onClick={() => navigation("/")} />
       <ul className="nav-list">
         <li>
           <Link to="/">Home</Link>
