@@ -1,9 +1,18 @@
 import BookingForm from "./BookingForm";
 
-function BookingPage() {
+interface BookingPageProps {
+  time: string;
+  setTime: (time: string) => void;
+}
+
+function BookingPage({time, setTime}: BookingPageProps) {
   return (
     <>
-      <BookingForm onSubmit={(formData) => console.log(formData)} />
+      <BookingForm
+        time={time}
+        setTime={setTime}
+        onSubmit={(formData) => console.log(formData)}
+      />
     </>
   );
 }

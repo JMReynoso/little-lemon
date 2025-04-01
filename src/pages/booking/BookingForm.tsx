@@ -2,22 +2,22 @@ import React, { useState } from "react";
 
 interface BookingFormProps {
   onSubmit: (formData: BookingFormData) => void;
+  setTime: (time: string) => void;
+  time: string;
 }
 
 interface BookingFormData {
   name: string;
   email: string;
   date: string;
-  time: string;
   occasion: string;
   guests: number;
 }
 
-function BookingForm({ onSubmit }: BookingFormProps) {
+function BookingForm({ time, setTime, onSubmit }: BookingFormProps) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [date, setDate] = useState("");
-  const [time, setTime] = useState("");
   const [occasion, setOccasion] = useState("");
   const [guests, setGuests] = useState(1);
 
