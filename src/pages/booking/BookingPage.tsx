@@ -1,16 +1,16 @@
 import BookingForm from "./BookingForm";
 
 interface BookingPageProps {
-  time: string;
-  setTime: (time: string) => void;
+  times: string[];
+  dispatch: (day: string) => void;
 }
 
-function BookingPage({ time, setTime }: BookingPageProps) {
+function BookingPage({ times, dispatch }: BookingPageProps) {
   return (
     <div style={{ backgroundColor: "#495E57" }}>
       <BookingForm
-        time={time}
-        setTime={setTime}
+        times={times}
+        dispatch={dispatch}
         onSubmit={(formData) => console.log(formData)}
       />
     </div>

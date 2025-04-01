@@ -2,8 +2,8 @@ import React, { useState } from "react";
 
 interface BookingFormProps {
   onSubmit: (formData: BookingFormData) => void;
-  setTime: (time: string) => void;
-  time: string;
+  dispatch: (day: string) => void;
+  times: string[];
 }
 
 interface BookingFormData {
@@ -14,14 +14,14 @@ interface BookingFormData {
   guests: number;
 }
 
-function BookingForm({ time, setTime, onSubmit }: BookingFormProps) {
+function BookingForm({ times, dispatch, onSubmit }: BookingFormProps) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [date, setDate] = useState("");
   const [occasion, setOccasion] = useState("");
   const [guests, setGuests] = useState(1);
 
-  const formData = { name, email, date, time, occasion, guests };
+  const formData = { name, email, date, times, occasion, guests };
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
@@ -36,9 +36,8 @@ function BookingForm({ time, setTime, onSubmit }: BookingFormProps) {
         break;
       case "date":
         setDate(value);
-        break;
-      case "time":
-        setTime(value);
+        const day: string = new Date(value).getDay().toString(); //0-6 where 0 is Sunday and 6 is Saturday
+        dispatch(day);
         break;
       case "occasion":
         setOccasion(value);
@@ -85,15 +84,12 @@ function BookingForm({ time, setTime, onSubmit }: BookingFormProps) {
         <select
           id="res-time"
           name="time"
-          value={formData.time}
+          value={formData.times}
           onChange={handleChange}
         >
-          <option value="17:00">17:00</option>
-          <option value="18:00">18:00</option>
-          <option value="19:00">19:00</option>
-          <option value="20:00">20:00</option>
-          <option value="21:00">21:00</option>
-          <option value="22:00">22:00</option>
+          {times.map((times) => (
+            <option key={times}>{times}</option>
+          ))}
         </select>
       </div>
       <div>
