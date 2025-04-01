@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import restaurantFood from "./images/restauranfood.jpg";
+import restaurantFood from "../images/restauranfood.jpg";
 
 function Footer() {
   return (

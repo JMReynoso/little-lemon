@@ -1,8 +1,8 @@
 import React, { useReducer } from "react";
-import AllRoutes from "./AllRoutes";
-import Footer from "./Footer";
-import Header from "./Header";
-import Nav from "./Nav";
+import AllRoutes from "./layout/AllRoutes";
+import Footer from "./layout/Footer";
+import Header from "./layout/Header";
+import Nav from "./layout/Nav";
 
 //All router dynamically changes main body content based on the URL path
 // Header and Nav are static components that are always present

@@ -1,7 +1,7 @@
-import AboutSection from "./AboutSection";
-import HeroSection from "./HeroSection";
-import HighlightSection from "./HighlightSection";
-import TestimonialSection from "./TestimonialSection";
+import AboutSection from "./sections/AboutSection";
+import HeroSection from "./sections/HeroSection";
+import HighlightSection from "./sections/HighlightSection";
+import TestimonialSection from "./sections/TestimonialSection";
 
 function HomePage() {
   return (

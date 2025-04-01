@@ -1,5 +1,5 @@
-import image1 from "../../images/Mario and Adrian A.jpg";
-import image2 from "../../images/Mario and Adrian b.jpg";
+import image1 from "../../../images/Mario and Adrian A.jpg";
+import image2 from "../../../images/Mario and Adrian b.jpg";
 
 function AboutSection() {
   return (

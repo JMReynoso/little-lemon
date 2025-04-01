@@ -1,12 +1,12 @@
 import { Route, Routes } from "react-router";
-import HomePage from "./pages/home/HomePage";
-import BookingPage from "./pages/booking/BookingPage";
-import AboutPage from "./pages/AboutPage";
-import OrderOnlinePage from "./pages/OrderOnlinePage";
-import LoginPage from "./pages/LoginPage";
-import AddressPage from "./pages/AddressPage";
-import PhoneNumberPage from "./pages/PhoneNumberPage";
-import EmailPage from "./pages/EmailPage";
+import HomePage from "../pages/home/HomePage";
+import BookingPage from "../pages/booking/BookingPage";
+import AboutPage from "../pages/about/AboutPage";
+import OrderOnlinePage from "../pages/order/OrderOnlinePage";
+import LoginPage from "../pages/login/LoginPage";
+import AddressPage from "../pages/contact/AddressPage";
+import PhoneNumberPage from "../pages/contact/PhoneNumberPage";
+import EmailPage from "../pages/contact/EmailPage";
 
 interface AllRoutesProps {
   times: string[];
