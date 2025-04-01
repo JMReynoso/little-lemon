@@ -1,5 +1,6 @@
 import image1 from "../../../images/Mario and Adrian A.jpg";
 import image2 from "../../../images/Mario and Adrian b.jpg";
+import "./css/AboutSection.css";
 
 function AboutSection() {
   return (

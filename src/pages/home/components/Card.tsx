@@ -1,3 +1,5 @@
+import "./css/Card.css";
+
 interface CardProps {
   imagePath: string;
   title: string;

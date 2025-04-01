@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router";
 import restaurantFood from "../../../images/restauranfood.jpg";
+import "./css/HeroSection.css";
 
 function HeroSection() {
   const navigate = useNavigate();

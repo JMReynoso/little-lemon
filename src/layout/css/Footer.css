@@ -1,0 +1,27 @@
+.nav-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+    background-color: #ebebeb;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+  }
+  
+  .nav-footer > img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 16px;
+  }
+  
+  .nav-footer > ul > li:first-child {
+    font-weight: bolder;
+    font-size: 24px;
+  }
+  
+  .nav-footer > ul > li:not(first-child) {
+    font-weight: 500;
+    font-size: 20px;
+  }

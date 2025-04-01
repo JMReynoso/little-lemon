@@ -1,0 +1,22 @@
+.about-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2em;
+  margin: 10%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.about-section > div > img {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  border-radius: 16px;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.about-section > div > img:nth-child(2) {
+  margin-top: -20%;
+  margin-left: 25%;
+}

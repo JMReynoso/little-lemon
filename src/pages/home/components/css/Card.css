@@ -1,0 +1,41 @@
+.card {
+  display: flex;
+  width: 300px;
+  height: 450px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: #ebebeb;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.card > img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  margin-top: -10%;
+}
+
+.card > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+  gap: 5em;
+  padding-top: 0%;
+  padding-bottom: 0%;
+}
+
+.card > button {
+  margin: auto;
+  margin-bottom: 10%;
+}
+
+.card > p {
+  margin-top: 0%;
+  margin-left: 2em;
+  margin-bottom: 2em;
+}

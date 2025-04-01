@@ -1,5 +1,6 @@
 import "./App.css";
 import Main from "./Main";
+import './typography.css';
 
 //<> is called a fragment and always ends in </>
 //Fragments allow you to group a list of children without adding extra nodes to the DOM.

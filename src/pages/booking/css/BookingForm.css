@@ -1,0 +1,15 @@
+.booking-form {
+    display: grid;
+    gap: 20px;
+    max-width: 400px;
+    justify-items: center;
+    margin: 0 auto;
+    padding: 5%;
+    color: #fff;
+  }
+  
+  .booking-form > div {
+    display: flex;
+    flex-direction: row;
+    gap: 6em;
+  }

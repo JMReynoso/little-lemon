@@ -1,3 +1,5 @@
+import './css/TestimonialCards.css';
+
 interface TestimonialCardsProps {
     rating: number;
     imagePath: string;

@@ -1,0 +1,33 @@
+.highlight {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 0%;
+  }
+  
+  .highlight > div:first-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 7%;
+    padding-bottom: 7%;
+  }
+  
+  .highlight > div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .highlight > div:first-child > button {
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-direction: row;
+  }

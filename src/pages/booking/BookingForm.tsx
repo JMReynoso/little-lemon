@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./css/BookingForm.css";
 
 interface BookingFormProps {
   onSubmit: (formData: BookingFormData) => void;

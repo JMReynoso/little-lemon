@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import "./css/BookingSuccessPage.css";
 
 function BookingSuccessPage() {
   const navigate = useNavigate();

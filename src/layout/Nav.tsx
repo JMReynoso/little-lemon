@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import logo from "../images/Logo.svg";
+import "./css/Nav.css";
 
 function Nav() {
   return (
