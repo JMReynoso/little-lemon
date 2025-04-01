@@ -65,8 +65,8 @@ function BookingForm({ time, setTime, onSubmit }: BookingFormProps) {
         maxWidth: "400px",
         justifyItems: "center",
         margin: "0 auto",
-        marginTop: "5%",
-        marginBottom: "5%",
+        padding: "5%",
+        color: "#fff",
       }}
       className="booking-form"
     >
