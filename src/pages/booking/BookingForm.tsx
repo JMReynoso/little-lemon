@@ -13,24 +13,42 @@ interface BookingFormData {
   guests: number;
 }
 
-const BookingForm: React.FC<BookingFormProps> = ({ onSubmit }) => {
-  const [formData, setFormData] = useState<BookingFormData>({
-    name: "",
-    email: "",
-    date: "",
-    time: "",
-    occasion: "",
-    guests: 1,
-  });
+function BookingForm({ onSubmit }: BookingFormProps) {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [date, setDate] = useState("");
+  const [time, setTime] = useState("");
+  const [occasion, setOccasion] = useState("");
+  const [guests, setGuests] = useState(1);
+
+  const formData = { name, email, date, time, occasion, guests };
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
   ) => {
     const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: name === "guests" ? parseInt(value) : value,
-    }));
+    switch (name) {
+      case "name":
+        setName(value);
+        break;
+      case "email":
+        setEmail(value);
+        break;
+      case "date":
+        setDate(value);
+        break;
+      case "time":
+        setTime(value);
+        break;
+      case "occasion":
+        setOccasion(value);
+        break;
+      case "guests":
+        setGuests(parseInt(value));
+        break;
+      default:
+        break;
+    }
   };
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -106,6 +124,6 @@ const BookingForm: React.FC<BookingFormProps> = ({ onSubmit }) => {
       <input type="submit" value="Make Your reservation" />
     </form>
   );
-};
+}
 
 export default BookingForm;
