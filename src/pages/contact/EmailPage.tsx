@@ -1,7 +1,7 @@
 function EmailPage() {
     return (
         <>
-            {/* Add your content here */}
+            <h1>Email Page</h1>
         </>
     );
 }

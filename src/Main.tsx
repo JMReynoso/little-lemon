@@ -4,35 +4,35 @@ import Footer from "./layout/Footer";
 import Header from "./layout/Header";
 import Nav from "./layout/Nav";
 
+const DEFAULT_TIMES = ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"];
+
+export function initializeTimes(): string[] {
+  return DEFAULT_TIMES;
+}
+
+export function updateTimes(state: string[], day: string): string[] {
+  if(day === "0") {
+    return ["17:00", "18:00", "19:00"];
+  } else if(day === "1") {
+    return ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"];
+  } else if(day === "2") {
+    return ["17:00", "18:00", "19:00", "20:00", "21:00"];
+  } else if(day === "3") {
+    return ["17:00", "18:00", "19:00", "20:00"];
+  } else if(day === "4") {
+    return ["17:00", "18:00"];
+  } else if(day === "5") {
+    return ["17:00", "18:00", "19:00", "20:00", "21:00"];
+  } else if(day === "6") {
+    return ["17:00", "18:00", "19:00"];
+  }
+
+  return initializeTimes();
+}
+
 //All router dynamically changes main body content based on the URL path
 // Header and Nav are static components that are always present
 function Main() {
-
-  function updateTimes(state: string[], day: string): string[] {
-    if(day === "0") {
-      return ["17:00", "18:00", "19:00"];
-    } else if(day === "1") {
-      return ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"];
-    } else if(day === "2") {
-      return ["17:00", "18:00", "19:00", "20:00", "21:00"];
-    } else if(day === "3") {
-      return ["17:00", "18:00", "19:00", "20:00"];
-    } else if(day === "4") {
-      return ["17:00", "18:00"];
-    } else if(day === "5") {
-      return ["17:00", "18:00", "19:00", "20:00", "21:00"];
-    } else if(day === "6") {
-      return ["17:00", "18:00", "19:00"];
-    }
-
-    return initializeTimes();
-  }
-
-  function initializeTimes(): string[] {
-    //all times available
-    return ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"];
-  }
-
   const [times, dispatch] = useReducer(updateTimes, initializeTimes());
 
   return (

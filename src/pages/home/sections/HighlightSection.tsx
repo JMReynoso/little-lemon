@@ -28,7 +28,7 @@ function HighlightSection() {
           imagePath={lemonDessert}
           title="Lemon Dessert"
           description="Sweet and tangy."
-          price="$5.99"
+          price="$8.99"
         />
       </div>
     </section>

@@ -18,13 +18,13 @@ function TestimonialSection() {
           rating={3}
           imagePath={person2}
           name="Some Person"
-          review="Delicious and fresh."
+          review="Fresh and delicious."
         />
         <TestimonialCards
           rating={4}
           imagePath={person3}
           name="John Doe"
-          review="Delicious and fresh."
+          review="Very good."
         />
       </div>
     </section>

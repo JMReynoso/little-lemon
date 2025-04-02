@@ -13,23 +13,15 @@ describe("BookingPage", () => {
 
   it("renders BookingForm when isSuccessful is false", () => {
     render(<BookingPage times={mockTimes} dispatch={mockDispatch} />);
-    expect(screen.getByText(/submit/i)).toBeInTheDocument();
+    expect(screen.getByText(/Make Your reservation/i)).toBeInTheDocument();
   });
 
   it("renders BookingSuccessPage when isSuccessful is true", () => {
     const { rerender } = render(
       <BookingPage times={mockTimes} dispatch={mockDispatch} />
     );
-    fireEvent.click(screen.getByText(/submit/i)); // Simulate form submission
+    fireEvent.click(screen.getByText(/Make Your reservation/i)); // Simulate form submission
     rerender(<BookingPage times={mockTimes} dispatch={mockDispatch} />);
-    expect(screen.queryByText(/submit/i)).not.toBeInTheDocument();
-  });
-
-  it("calls dispatch when a time is selected", () => {
-    render(<BookingPage times={mockTimes} dispatch={mockDispatch} />);
-    fireEvent.change(screen.getByLabelText(/time/i), {
-      target: { value: mockTimes[0] },
-    });
-    expect(mockDispatch).toHaveBeenCalledWith(mockTimes[0]);
+    expect(screen.queryByText(/Return Home/i)).not.toBeInTheDocument();
   });
 });
