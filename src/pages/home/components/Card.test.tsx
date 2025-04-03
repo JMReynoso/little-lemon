@@ -29,7 +29,7 @@ describe("Card Component", () => {
 
     test("renders the card image with correct src and alt attributes", () => {
         render(<Card {...mockProps} />);
-        const imageElement = screen.getByAltText("food pic");
+        const imageElement = screen.getByAltText("Picture of Food");
         expect(imageElement).toHaveAttribute("src", mockProps.imagePath);
     });
 

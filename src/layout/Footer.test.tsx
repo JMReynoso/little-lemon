@@ -9,7 +9,7 @@ describe("Footer Component", () => {
                 <Footer />
             </BrowserRouter>
         );
-        const imageElement = screen.getByAltText("pic");
+        const imageElement = screen.getByAltText("restaurant food");
         expect(imageElement).toBeInTheDocument();
     });
 

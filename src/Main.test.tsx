@@ -39,8 +39,10 @@ describe("Main Component", () => {
       "21:00",
       "22:00",
     ];
+    const dateString: string = new Date().toString();
+
     (fetchAPI as jest.Mock).mockReturnValue(mockInitialTimes);
-    const times = updateTimes();
+    const times = updateTimes([], dateString);
 
     expect(fetchAPI).toHaveBeenCalledWith(expect.any(Date));
     expect(times).toEqual(mockInitialTimes);

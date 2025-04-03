@@ -5,8 +5,8 @@ import "./css/Nav.css";
 function Nav() {
   const navigation = useNavigate();
   return (
-    <nav className="nav">
-      <img src={logo} alt="Logo" onClick={() => navigation("/")} />
+    <nav className="nav" aria-label="Main Navigation">
+      <img src={logo} alt="Logo" onClick={() => navigation("/")} aria-label="Go to Home" />
       <ul className="nav-list">
         <li>
           <Link to="/">Home</Link>

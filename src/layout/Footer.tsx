@@ -5,9 +5,9 @@ import "./css/Footer.css";
 function Footer() {
   return (
     <footer className="nav-footer">
-      <img src={restaurantFood} alt="pic"></img>
+      <img src={restaurantFood} alt="restaurant food"></img>
       <ul>
-        <li>Doormat Nav</li>
+        <li aria-label="Footer Navigation">Doormat Nav</li>
         <li>
           <Link to="/">Home</Link>
         </li>

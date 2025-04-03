@@ -22,7 +22,9 @@ function Main() {
     <>
       <Header />
       <Nav />
+      <main>
       <AllRoutes times={times} dispatch={dispatch} />
+      </main>
       <Footer />
     </>
   );

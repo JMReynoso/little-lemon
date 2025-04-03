@@ -45,7 +45,7 @@ describe("HeroSection Component", () => {
             </MemoryRouter>
         );
 
-        const image = screen.getByAltText("pic");
+        const image = screen.getByAltText("restaurant food");
         expect(image).toBeInTheDocument();
     });
 });

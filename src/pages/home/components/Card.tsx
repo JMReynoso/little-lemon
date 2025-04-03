@@ -10,7 +10,7 @@ interface CardProps {
 function Card(props: CardProps) {
   return (
     <div className="card">
-      <img src={props.imagePath} alt="food pic" />
+      <img src={props.imagePath} alt="Picture of Food" />
       <div>
         <h3>{props.title}</h3>
         <p>{props.price}</p>

@@ -5,7 +5,7 @@ import person3 from "../../../images/people/b64f988f077b50ffdab0afee9de4d701e4a9
 
 function TestimonialSection() {
   return (
-    <section className="testimonial-section">
+    <section className="testimonial-section" aria-labelledby="testimonials-title">
       <h1 className="section-title">Testimonials</h1>
       <div className="all-testimonial-cards">
         <TestimonialCards

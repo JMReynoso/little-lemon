@@ -17,11 +17,12 @@ function HeroSection() {
           onClick={() => {
             navigate("/reservations");
           }}
+          aria-label="Reserve a Table"
         >
           Reserve a Table
         </button>
       </div>
-      <img src={restaurantFood} alt="pic"></img>
+      <img src={restaurantFood} alt="restaurant food"></img>
     </section>
   );
 }
