@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import "./css/BookingForm.css";
+import { submitAPI } from "../../api/api.js";
 
 interface BookingFormProps {
   onSubmit: (formData: BookingFormData) => void;
-  dispatch: (day: string) => void;
+  dispatch: (date: string) => void;
   times: string[];
   setIsSuccessful: (isSuccessful: boolean) => void;
 }
@@ -39,7 +40,6 @@ function BookingForm({
       alert("Guests must be between 1 and 10.");
       return false;
     }
-    setIsSuccessful(true);
     return true;
   };
 
@@ -50,8 +50,8 @@ function BookingForm({
     switch (name) {
       case "date":
         setDate(value);
-        const day: string = new Date(value).getDay().toString(); //0-6 where 0 is Sunday and 6 is Saturday
-        dispatch(day);
+        const date: string = new Date(value).toString(); //0-6 where 0 is Sunday and 6 is Saturday
+        dispatch(date);
         break;
       case "occasion":
         setOccasion(value);
@@ -66,8 +66,16 @@ function BookingForm({
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    validateForm();
-    onSubmit(formData);
+    if (!validateForm()) {
+      return;
+    }
+    const response = submitAPI(formData);
+    if (response) {
+      setIsSuccessful(true);
+      onSubmit(formData);
+    } else {
+      alert("Error submitting form. Please try again.");
+    }
   };
 
   return (

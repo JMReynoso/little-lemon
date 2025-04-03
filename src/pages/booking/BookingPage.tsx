@@ -4,7 +4,7 @@ import BookingSuccessPage from "./BookingSuccessPage";
 
 interface BookingPageProps {
   times: string[];
-  dispatch: (day: string) => void;
+  dispatch: (date: string) => void;
 }
 
 function BookingPage({ times, dispatch }: BookingPageProps) {

@@ -10,7 +10,7 @@ import EmailPage from "../pages/contact/EmailPage";
 
 interface AllRoutesProps {
   times: string[];
-  dispatch: (day: string) => void;
+  dispatch: (date: string) => void;
 }
 
 function AllRoutes({ times, dispatch }: AllRoutesProps) {
