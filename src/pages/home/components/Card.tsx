@@ -1,4 +1,5 @@
 import "./css/Card.css";
+import { useNavigate } from "react-router-dom";
 
 interface CardProps {
   imagePath: string;
@@ -8,6 +9,7 @@ interface CardProps {
 }
 
 function Card(props: CardProps) {
+  const navigate = useNavigate();
   return (
     <div className="card">
       <img src={props.imagePath} alt="Picture of Food" />
@@ -16,7 +18,14 @@ function Card(props: CardProps) {
         <p>{props.price}</p>
       </div>
       <p>{props.description}</p>
-      <button>Order for Delivery</button>
+      <button
+        onClick={() => {
+          navigate("/orderOnline");
+        }}
+        aria-label="Reserve a Table"
+      >
+        Order for Delivery
+      </button>
     </div>
   );
 }

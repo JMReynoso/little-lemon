@@ -3,13 +3,20 @@ import greekSalad from "../../../images/greek salad.jpg";
 import bruchetta from "../../../images/bruchetta.svg";
 import lemonDessert from "../../../images/lemon dessert.jpg";
 import "./css/HighlightSection.css";
+import { useNavigate } from "react-router-dom";
 
 function HighlightSection() {
+  const navigate = useNavigate();
   return (
     <section className="highlight">
       <div>
         <h1 className="title">This Week's Specials!</h1>
-        <button>Online Menu</button>
+        <button
+          onClick={() => {
+            navigate("/orderOnline");
+          }}
+          aria-label="Reserve a Table"
+        >Online Menu</button>
       </div>
       <div className="card-container">
         <Card
