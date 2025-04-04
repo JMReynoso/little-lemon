@@ -1,9 +1,11 @@
 function OrderOnlinePage() {
-    return (
-        <>
-            <h1>Order Online Page</h1>
-        </>
-    );
+  return (
+    <>
+      <header>
+        <h1>Order Online Page</h1>
+      </header>
+    </>
+  );
 }
 
 export default OrderOnlinePage;

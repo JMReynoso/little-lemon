@@ -11,18 +11,23 @@ function BookingPage({ times, dispatch }: BookingPageProps) {
   const [isSuccessful, setIsSuccessful] = useState(false);
 
   return (
-    <div style={{ backgroundColor: "#495E57" }}>
-      {!isSuccessful ? (
-        <BookingForm
-          times={times}
-          dispatch={dispatch}
-          onSubmit={(formData) => console.log(formData)}
-          setIsSuccessful={setIsSuccessful}
-        />
-      ) : (
-        <BookingSuccessPage />
-      )}
-    </div>
+    <>
+      <header>
+        <h1>Book an exclusive table</h1>
+      </header>
+      <div style={{ backgroundColor: "#495E57" }}>
+        {!isSuccessful ? (
+          <BookingForm
+            times={times}
+            dispatch={dispatch}
+            onSubmit={(formData) => console.log(formData)}
+            setIsSuccessful={setIsSuccessful}
+          />
+        ) : (
+          <BookingSuccessPage />
+        )}
+      </div>
+    </>
   );
 }
 export default BookingPage;

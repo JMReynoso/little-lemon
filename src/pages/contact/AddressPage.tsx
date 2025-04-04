@@ -1,9 +1,11 @@
 function AddressPage() {
-    return (
-        <>
-            <h1>Address Page</h1>
-        </>
-    );
+  return (
+    <>
+      <header>
+        <h1>Address Page</h1>
+      </header>
+    </>
+  );
 }
 
 export default AddressPage;

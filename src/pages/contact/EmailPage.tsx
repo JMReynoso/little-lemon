@@ -1,9 +1,11 @@
 function EmailPage() {
-    return (
-        <>
-            <h1>Email Page</h1>
-        </>
-    );
+  return (
+    <>
+      <header>
+        <h1>Email Page</h1>
+      </header>
+    </>
+  );
 }
 
 export default EmailPage;

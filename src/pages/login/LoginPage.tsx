@@ -1,10 +1,12 @@
 function LoginPage() {
-    return (
-        <>
-            <h1>Login Page</h1>
-            <p>Welcome to the login page!</p>
-        </>
-    );
+  return (
+    <>
+      <header>
+        <h1>Login Page</h1>
+      </header>
+      <p>Welcome to the login page!</p>
+    </>
+  );
 }
 
 export default LoginPage;
