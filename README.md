@@ -9,6 +9,7 @@ Deliverables for the capstone are the completed React application code and a dep
 ## Technologies, Languages and Tools
 
 Throughout the course, students apply standard front-end technologies and tools:
+
 •	**Languages**: HTML5, CSS3, and modern JavaScript (ES6+). The course presumes familiarity with these core languages, as the capstone builds a complete HTML/CSS/JS front end.
 	
 •	**Front-End Framework**: React.js – all application logic is built in React. Students use React components for different views (e.g. pages or UI widgets) and manage state via React’s state/hooks (and often Context API for cross-component state). The certificate emphasizes React skills.
