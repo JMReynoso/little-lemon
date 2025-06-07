@@ -9,13 +9,19 @@ Deliverables for the capstone are the completed React application code and a dep
 ## Technologies, Languages and Tools
 
 Throughout the course, students apply standard front-end technologies and tools:
-	•	Languages: HTML5, CSS3, and modern JavaScript (ES6+). The course presumes familiarity with these core languages, as the capstone builds a complete HTML/CSS/JS front end ￼.
-	•	Front-End Framework: React.js – all application logic is built in React. Students use React components for different views (e.g. pages or UI widgets) and manage state via React’s state/hooks (and often Context API for cross-component state). The certificate emphasizes React skills ￼.
-	•	Libraries/Routing: Students typically use React Router (or similar) to create multiple views and handle client-side navigation (“multiple views” is an explicit learning outcome ￼). Common React helper libraries may be used (e.g. for unique IDs, icons, etc.).
-	•	Tools: Version control with Git and GitHub is integral (the syllabus lists Git as a key skill ￼, and Module 1 tasks include setting up a Git repo ￼).  For design and prototyping, Figma is used in planning the app’s UI (e.g. wireframing and applying design fundamentals ￼). Development is done in a code editor (e.g. VS Code) with a Node.js build environment (npm/yarn to install React).
-	•	Testing & Validation: The capstone includes unit testing for React code. Students learn to use a testing framework (implicitly Jest and React Testing Library) – the modules include exercises on writing component tests and form-validation tests ￼. Form input validation logic is added in JavaScript as well.
-	•	Accessibility & UX: The course covers web accessibility (WCAG) guidelines – ensuring semantic HTML, ARIA attributes, and keyboard navigation – and usability testing principles ￼ ￼.
-	•	Other Tools: Students may also use browser APIs (fetch/localStorage) when implementing the booking feature, and tools like React Icons. (Instructor materials suggest purely in-house styling; no external CSS framework is used ￼.)
+•	Languages: HTML5, CSS3, and modern JavaScript (ES6+). The course presumes familiarity with these core languages, as the capstone builds a complete HTML/CSS/JS front end ￼.
+	
+•	Front-End Framework: React.js – all application logic is built in React. Students use React components for different views (e.g. pages or UI widgets) and manage state via React’s state/hooks (and often Context API for cross-component state). The certificate emphasizes React skills ￼.
+
+•	Libraries/Routing: Students typically use React Router (or similar) to create multiple views and handle client-side navigation (“multiple views” is an explicit learning outcome ￼). Common React helper libraries may be used (e.g. for unique IDs, icons, etc.).
+
+•	Tools: Version control with Git and GitHub is integral (the syllabus lists Git as a key skill ￼, and Module 1 tasks include setting up a Git repo ￼).  For design and prototyping, Figma is used in planning the app’s UI (e.g. wireframing and applying design fundamentals ￼). Development is done in a code editor (e.g. VS Code) with a Node.js build environment (npm/yarn to install React).
+
+•	Testing & Validation: The capstone includes unit testing for React code. Students learn to use a testing framework (implicitly Jest and React Testing Library) – the modules include exercises on writing component tests and form-validation tests ￼. Form input validation logic is added in JavaScript as well.
+
+•	Accessibility & UX: The course covers web accessibility (WCAG) guidelines – ensuring semantic HTML, ARIA attributes, and keyboard navigation – and usability testing principles ￼ ￼.
+
+•	Other Tools: Students may also use browser APIs (fetch/localStorage) when implementing the booking feature, and tools like React Icons. (Instructor materials suggest purely in-house styling; no external CSS framework is used ￼.)
 
 # Getting Started with Create React App
 
