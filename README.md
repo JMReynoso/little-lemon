@@ -1,3 +1,11 @@
+## Final Capstone Project (Little Lemon Reservation App)
+
+The culmination of the course is the Capstone Project: building a fully functional restaurant reservation web app (nicknamed “Little Lemon” in the course).  This is a real-world, portfolio-style project where students apply everything they’ve learned.
+
+In this project, students create a “Little Lemon” restaurant website with at least three main features (as exemplified by student portfolios): a landing/homepage, a reservation (book-a-table) page with a form, and a navigation menu.  The app must be responsive and visually polished according to a design spec (the course provides a Figma design reference).  Key objectives include: integrating React components for each page, managing booking data in state, connecting the booking form to a backend API (sending/receiving JSON), validating user input, and updating the UI dynamically. On submission, the app should display booked tables and allow new reservations.
+
+Deliverables for the capstone are the completed React application code and a deployed demo (or similar demonstration).  Students typically host their code on GitHub and deploy the app (e.g. via Netlify or GitHub Pages).  The course guide mentions a solution walkthrough video (see Module 4 readings) titled “Booking a table on the Little Lemon website,” indicating the target functionality.  By finishing, learners will have a job-ready project to showcase – a working React web app combining UI design with real functionality ￼.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
